@@ -29,5 +29,5 @@ app.use('/blogs', blogRoutes);
 // Serve static files from the public directory
 
 app.get(`/`, (req, res) => {
-    res.send('Home Page');
+    res.sendFile('C:/new_react_23_08/react-app/build/index.html');
 });
