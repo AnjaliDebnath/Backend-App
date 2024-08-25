@@ -15,6 +15,7 @@ app.use(express.json());
 
 app.listen(3090, () => {
     console.log("Server started on", 'http://localhost:3090/');
+    
 });
 mongoose.connect(DBURI)
     .then(() => {
@@ -29,5 +30,5 @@ app.use('/blogs', blogRoutes);
 // Serve static files from the public directory
 
 app.get(`/`, (req, res) => {
-    res.sendFile('C:/new_react_23_08/react-app/build/index.html');
+    res.send("hiii");
 });
